@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Portifolio Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+    <link rel="icon" src="img"
+</head>
+<body>
+    <img class="img" src="img/pngbranco.png" width="50" height="50" alt="logo" href="img/pngbranco.png" />
+     <div class="benv">
+        <h1 class="benvinde">
+            */Bem-Vinde ao meu portifólio!
+            Pressione a tecla Enter;
+        </h1>
+
+        <script>
+            function typeWriter(elemento) {
+                const textoArray =
+                    elemento.innerHTML.split('');
+                elemento.innerHTML = '';
+                textoArray.forEach(function (letra, i) {
+
+                    setTimeout(function () {
+                        elemento.innerHTML += letra;
+                    }, 80 * i)
+                });
+            }
+            const titulo =
+                document.querySelector('h1');
+            typeWriter(titulo);
+        </script>
+        
+         <script>
+             document.body.addEventListener("keydown", function (event) {
+                 if (event.key === "Enter") {
+                     window.location.assign("about.html");
+                    
+                 }
+             });
+             
+         </script>
+
+
+    </div>
+</body>
+</html>

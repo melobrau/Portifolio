@@ -1,0 +1,141 @@
+﻿* {
+    background-color: black;
+}
+
+body {
+    
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height:50px;
+}
+.benv {
+    text-align: center;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+    .benv .benvinde {
+        text-align: center;
+        width: 1280px;
+        display: flex;
+        justify-content: center;
+        text-shadow: 0 0 8px #33C1FF;
+    }
+        .benv .benvinde:after {
+            content: '|';
+            margin-left: 5px;
+            opacity: 1;
+            animation: blink 1s infinite;
+        }
+
+
+
+@keyframes blink{  
+
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+.social {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 8em;
+    align:center;
+    padding-left: 19%;
+   margin-top: 1%;
+}
+
+
+.bt {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-left: 8em;
+    align:center;
+}
+
+
+.botoes {
+
+    width: 300px;
+    height: 40px;
+    font-size: .9em;
+    border-color: #00ccFF;
+    border-radius: 8px;
+    color: #00ccFF;
+    box-shadow: 0 0 0px 0px #3498db inset, 0 0 0 0 #3498db;
+    text-shadow: 0 0 0px 0px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+    .botoes:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    }
+
+
+
+.container {
+    margin-top:10em;
+    text-shadow: 0 0 8px #33C1FF;
+    text-align: left;
+    text-justify: left;
+    margin-left: 10em;
+    width: 50%;
+}
+
+.melo {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    margin-left: 800px;
+    width: 365px;
+    height: 510px;
+}
+    .container .sobre {
+        font-size:50px;
+        text-align: left;
+        width: 400px;
+        display: flex;
+        text-shadow: 0 0 8px #33C1FF;
+    }
+    .container .sobre .sobre1 {
+        font-size:20px;
+        position: absolute;
+        left: 0px;
+        width: 300px;
+        text-align: left;
+        align: center;
+        padding: 10px;
+    }
+.container .sobre:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+

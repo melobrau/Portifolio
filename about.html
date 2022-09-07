@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Portifolio Page</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+    <img class="img" src="img/pngbranco.png" width="50" height="50" alt="logo" href="img/pngbranco.png" />
+    <img class="melo" src="img/melo.png" width="3508" height="4961" alt="imgmelo" />
+    <div class="container">
+        <h1 class="sobre">*/Sobre mim</h1>
+        <h3 class="sobre1">Me chamo Mateus Melo tenho 22 anos, sou de Recife, Pernambuco! Sou artista visual e estudo Análise e Desenvolvimento de Sistemas na Faculdade do Senac Pernambuco. Tenho focado meus estudos na área de desenvolvimento Front-End.</h3>
+        
+        <div class="bt">
+            <button class="botoes" onclick="document.location='portifolio.pdf'">Acesse meu Portifólio Artístico AQUI!</button><br/>
+            </div>
+    </div>
+    <div class="social">
+        <a href="https://github.com/melobrau"><input type="image" name="github" src="img/git.png" width="55px" height="55px" alt="gitlogo">
+        <a href="https://www.linkedin.com/in/mateus-melo-2a9513225/"> <input type="image" name="github" src="img/linkedin.png" width="55px" height="55px" alt="gitlogo" >
+        </div>
+    </div>
+    <script>
+        function typeWriter(elemento) {
+            const textoArray =
+                elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach(function (letra, i) {
+
+                setTimeout(function () {
+                    elemento.innerHTML += letra;
+                }, 80 * i)
+            });
+        }
+        const titulo =
+            document.querySelector('h1');
+        typeWriter(titulo);
+    </script>
+
+
+</body>
+</html>
